@@ -24,6 +24,7 @@ body {
 	--darkTheme: #100f10;
 	--lightTheme: #1b1b1b;
 	--lighterTheme: #242424;
+	--blueContrast: #0089e4;
 }
 
 /* ==================== LOGO NAVBAR STYLING START ======================== */
@@ -224,7 +225,7 @@ video {
 	object-fit: fill;
 }
 
-/* ABOUT US TEXT HOME MIDDLE */
+/* ABOUT US TEXT HOME MIDDLE START */
 .AboutUS {
 	position: absolute;
 	left: 50%;
@@ -248,33 +249,7 @@ h3 {
 	letter-spacing: 1.5px;
 	line-height: 26px;
 }
-
-/* Material Ui Classes start */
-.MuiDrawer-paperAnchorRight {
-	background-color: var(--lightTheme) !important;
-	color: white;
-}
-
-.MuiTypography-body1 {
-	font-size: 2rem !important;
-	color: white;
-	padding: 3px 0px 3px 12px;
-}
-
-.MuiListItem-button:hover {
-	background-color: rgba(255, 255, 255, 0.2) !important;
-	transition: 0.7s;
-}
-/* Material Ui Classes end */
-
-.crossISidebar {
-	float: right;
-	margin-right: 2rem;
-	margin-top: 1rem;
-	margin-bottom: 2rem;
-	cursor: pointer;
-	color: white;
-}
+/* ABOUT US TEXT HOME MIDDLE END */
 
 .UnderNameNChip {
 	font-weight: 900;
@@ -388,5 +363,288 @@ h3 {
 	transform: translateZ(0) scale(1.7);
 }
 /*==================== BLOB BUTTON END ====================*/
-
 /* ==================== HOME STYLING END ======================== */
+
+/* ==================== SIDEBAR STYLING END ======================== */
+.crossISidebar {
+	float: right;
+	margin-right: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	cursor: pointer;
+	color: white;
+}
+
+/* Material Ui Classes start */
+.MuiDrawer-paperAnchorRight {
+	background-color: var(--lightTheme) !important;
+	color: white;
+}
+
+.MuiTypography-body1 {
+	font-size: 2rem !important;
+	color: white;
+	padding: 3px 0px 3px 12px;
+}
+
+/* Material Ui Classes end */
+
+/* SIDEBAR HOVER EFFECT */
+.MuiListItem-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.2);
+	transform: scaleY(0);
+	transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+		background-color 0.2s;
+	transform-origin: bottom;
+}
+.MuiListItem-button:hover::before,
+.MuiListItem-button--active::before {
+	transform: scaleY(1);
+	width: 100%;
+	color: white;
+}
+.MuiListItem-button:active::before {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+/* .side-nav__link:link,
+.side-nav :visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 1.5em 3rem;
+	display: block;
+	color: red;
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 100;
+} */
+/* ==================== SIDEBAR STYLING END ======================== */
+
+/* ==================== UNDER ABOUT PAGE SKILLS DISPLAY START ======================== */
+.SkillsContainer {
+	padding: 1rem 0rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* ==================== UNDER ABOUT PAGE SKILLS DISPLAY END ======================== */
+
+/* ==================== OUR FEATURES SECTION END ======================== */
+.features-area.bg-image {
+	background-image: url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.features-area.bg-image::before {
+	content: "";
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	background-color: #e7e7e7de;
+	border-top: 1px solid rgba(212, 212, 212, 0.9);
+	border-bottom: 1px solid rgba(212, 212, 212, 0.9);
+}
+
+.features-area {
+	position: relative;
+	padding-bottom: 70px;
+	z-index: 1;
+}
+
+.ptb-100 {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.section-title {
+	text-align: center;
+	margin-bottom: 60px;
+	margin-top: -5px;
+	position: relative;
+	z-index: 1;
+}
+
+.section-title span {
+	text-transform: uppercase;
+	display: block;
+	letter-spacing: 1px;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 12px;
+	color: var(--darkTheme);
+}
+
+.section-title h2 {
+	margin: 0px;
+	font-size: 40px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.section-title h2 b {
+	background-image: linear-gradient(rgba(0, 0, 0, 0) 80%, var(--blueContrast));
+	background-position: initial;
+	background-repeat: initial;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: initial;
+	font-weight: 600 !important;
+	background-size: 90px 1.1em !important;
+}
+
+.section-title p {
+	max-width: 520px;
+	margin: 18px auto 0px;
+}
+
+.single-features {
+	background-color: rgb(255, 255, 255);
+	box-shadow: rgb(0 0 0 / 5%) 0px 0px 20px 3px;
+	padding: 35px 30px;
+	text-align: center;
+	margin-bottom: 30px;
+	transition: all 0.5s ease 0s;
+	border-radius: 4px;
+}
+
+.single-features .icon {
+	font-size: 45px;
+	transition: all 0.5s ease 0s;
+	/* color: rgb(255, 44, 111); */
+	color: var(--blueContrast);
+	line-height: 1;
+}
+
+.single-features h3 {
+	font-size: 22px;
+	font-weight: 600;
+	transition: all 0.5s ease 0s;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	color: var(--black);
+}
+
+.single-features p {
+	transition: all 0.5s ease 0s;
+	font-size: 1.6rem;
+	color: var(--lighterTheme);
+}
+
+.single-features.active {
+	background-color: var(--lighterTheme);
+}
+
+.single-features.active h3 {
+	color: var(--white);
+}
+
+.single-features.active p {
+	color: rgb(211, 211, 211);
+}
+
+.single-features:hover,
+.single-features:focus {
+	background-color: var(--lighterTheme);
+	transform: translateY(-10px);
+}
+
+.single-features:hover h3 {
+	color: var(--white);
+}
+
+.single-features:hover p {
+	color: rgb(211, 211, 211);
+}
+
+/* ==================== OUR FEATURES SECTION END ======================== */
+
+/* ==================== EXPERIENCE SECTION START ======================== */
+.ExpContainer {
+	margin: 12rem 0rem;
+}
+
+.ExpContainer .section-title {
+	margin-bottom: 2rem;
+}
+
+.ExpContainer .section-title h2 b {
+	font-size: 4.8rem;
+}
+
+.singleExperience {
+	/* background-color: var(--black); */
+	height: auto;
+	box-shadow: 2px 2px 22px rgba(0, 0, 0, 0.4);
+	border-radius: 8px;
+	padding: 0.6rem 0rem;
+	margin-top: 4rem;
+}
+
+.singleExperience h1 {
+	color: white;
+	font-size: 2.5rem;
+}
+
+.singleExperience h1 img {
+	margin: -0.5rem;
+	height: 5rem;
+	-webkit-animation: rotate-vert-center 3.5s
+		cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+	animation: rotate-vert-center 3.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+		infinite both;
+}
+
+@-webkit-keyframes rotate-vert-center {
+	0% {
+		-webkit-transform: rotateY(0);
+		transform: rotateY(0);
+	}
+	100% {
+		-webkit-transform: rotateY(360deg);
+		transform: rotateY(360deg);
+	}
+}
+@keyframes rotate-vert-center {
+	0% {
+		-webkit-transform: rotateY(0);
+		transform: rotateY(0);
+	}
+	100% {
+		-webkit-transform: rotateY(360deg);
+		transform: rotateY(360deg);
+	}
+}
+
+.SProgressBar {
+	height: 12rem;
+	margin: 2rem 0rem;
+}
+
+.singleExperience {
+	position: relative;
+	transition: box-shadow 0.4s;
+	transition: all 0.5s ease 0s;
+}
+
+.innerSingleExp {
+	background: var(--darkTheme);
+	padding: 2.5rem 0rem;
+}
+
+.singleExperience:hover {
+	box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.5);
+	transform: translateY(-10px);
+}
+
+/* ==================== EXPERIENCE SECTION END ======================== */
