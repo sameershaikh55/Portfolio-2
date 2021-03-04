@@ -7,6 +7,8 @@ import bootstrapImg from "./SkillsImages/bootstrap.png";
 import reactjsImg from "./SkillsImages/reactjs.png";
 import materialUIImg from "./SkillsImages/materialUI.png";
 
+import Slide from "react-reveal/Slide";
+
 const SkillsDisplay = () => {
 	const SkillsData = [
 		{
@@ -49,17 +51,19 @@ const SkillsDisplay = () => {
 	return (
 		<>
 			<div className="SkillsContainer bg-white">
-				{SkillsData.map((preImg, index) => {
-					return (
-						<span key={index}>
-							<img
-								src={preImg.img}
-								alt={preImg.alt}
-								style={{ height: preImg.height }}
-							/>
-						</span>
-					);
-				})}
+				<Slide bottom cascade>
+					{SkillsData.map((preImg, index) => {
+						return (
+							<span key={index}>
+								<img
+									src={preImg.img}
+									alt={preImg.alt}
+									style={{ height: preImg.height }}
+								/>
+							</span>
+						);
+					})}
+				</Slide>
 			</div>
 		</>
 	);

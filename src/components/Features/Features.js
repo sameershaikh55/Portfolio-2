@@ -6,15 +6,19 @@ import { BsBarChartFill } from "react-icons/bs";
 import { FaMobileAlt } from "react-icons/fa";
 import SingleFeature from "./SingleFeature";
 
+import Fade from "react-reveal/Fade";
+
 const Features = () => {
 	return (
 		<section className="features-area ptb-100 bg-image">
 			<div className="container">
 				<div className="section-title">
 					<span>Our Features</span>
-					<h2>
-						I am Always Try To <b>Understand</b> Users Expectation
-					</h2>
+					<Fade duration={1000}>
+						<h2>
+							I am Always Try To <b>Understand</b> Users Expectation
+						</h2>
+					</Fade>
 				</div>
 				<div className="row">
 					<SingleFeature

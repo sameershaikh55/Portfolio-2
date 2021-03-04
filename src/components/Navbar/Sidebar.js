@@ -5,8 +5,10 @@ import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-import MenuIcon from "@material-ui/icons/Menu";
-import CancelIcon from "@material-ui/icons/Cancel";
+
+// IMPORTING REACT icons
+import { ImCross } from "react-icons/im";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 // IMPORTING REACT SCROLL
 import { Link } from "react-scroll";
@@ -49,7 +51,7 @@ function Sidebar() {
 			onKeyDown={toggleDrawer(anchor, false)}
 		>
 			<List>
-				<CancelIcon className="crossISidebar" style={{ fontSize: "4.2rem" }} />
+				<ImCross className="crossISidebar" style={{ fontSize: "4.5rem" }} />
 				<Link
 					activeClass="activeNav"
 					to="About"
@@ -68,7 +70,7 @@ function Sidebar() {
 					to="Experience"
 					smooth={true}
 					duration={ScrollDuration}
-					offset={-110}
+					offset={5}
 					delay={ScrollDelay}
 					spy={true}
 					onClick={toggleDrawer(anchor, false)}
@@ -112,9 +114,9 @@ function Sidebar() {
 		<div>
 			{["right"].map((anchor) => (
 				<React.Fragment key={anchor}>
-					<MenuIcon
+					<GiHamburgerMenu
 						onClick={toggleDrawer(anchor, true)}
-						style={{ color: "white", fontSize: "2.8rem", cursor: "pointer" }}
+						style={{ color: "white", fontSize: "2.5rem", cursor: "pointer" }}
 					/>
 					<Drawer
 						anchor={anchor}

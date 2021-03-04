@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 
 // IMPORTING COMPONENTS
@@ -10,17 +10,43 @@ import Experience from "./components/Experience/Experience";
 import MyProjects from "./components/MyProjects/MyProjects";
 import Footer from "./components/Footer/Footer";
 
+// IMPORTING LOADING IMAGE
+import Loader from "./Loader/loader.gif";
+
 function App() {
+	const [loading, setLoading] = useState(false);
+
+	useEffect(() => {
+		setLoading((prev) => !prev);
+		setTimeout(() => {
+			setLoading((prev) => !prev);
+		}, 2000);
+	}, []);
+
+	if (loading) {
+		document.body.style.overflow = "hidden";
+	} else {
+		document.body.style.overflow = "auto";
+	}
+
 	return (
-		<div>
-			<Navbar />
-			<Home />
-			<SkillsDisplay />
-			<Features />
-			<Experience />
-			<MyProjects />
-			<Footer />
-		</div>
+		<>
+			{loading ? (
+				<div className="LoadeerContainer">
+					<img src={Loader} alt="" />
+				</div>
+			) : (
+				<div>
+					<Navbar />
+					<Home />
+					<SkillsDisplay />
+					<Features />
+					<Experience />
+					<MyProjects />
+					<Footer />
+				</div>
+			)}
+		</>
 	);
 }
 

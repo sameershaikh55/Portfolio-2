@@ -7,6 +7,44 @@
 	font-family: "Poppins", sans-serif;
 }
 
+/* ======= SCROLLBAR STYLING START ======== */
+html {
+	scrollbar-face-color: var(--lighterTheme);
+	scrollbar-base-color: var(--lighterTheme);
+	scrollbar-3dlight-color: var(--lighterTheme);
+	scrollbar-highlight-color: var(--lighterTheme);
+	scrollbar-track-color: var(--darkTheme);
+	scrollbar-arrow-color: var(--darkTheme);
+	scrollbar-shadow-color: var(--lighterTheme);
+	scrollbar-dark-shadow-color: var(--lighterTheme);
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 3px;
+}
+::-webkit-scrollbar-button {
+	background-color: var(--lighterTheme);
+}
+::-webkit-scrollbar-track {
+	background-color: var(--lighterTheme);
+}
+::-webkit-scrollbar-track-piece {
+	background-color: var(--darkTheme);
+}
+::-webkit-scrollbar-thumb {
+	height: 50px;
+	background-color: hsl(204, 100%, 25%);
+	border-radius: 3px;
+}
+::-webkit-scrollbar-corner {
+	background-color: var(--lighterTheme);
+}
+::-webkit-resizer {
+	background-color: #666;
+}
+/* ======= SCROLLBAR STYLING END ======== */
+
 /* colors */
 /* #100F10 #1B1B1B #242424, */
 
@@ -62,6 +100,17 @@ body {
 	--lighterTheme: #242424;
 	--blueContrast: #0089e4;
 }
+
+/* ==================== LOADING STYLING START ======================== */
+.LoadeerContainer {
+	overflow-y: hidden;
+}
+
+.LoadeerContainer img {
+	height: 100vh;
+	width: 100%;
+}
+/* ==================== LOADING STYLING END ======================== */
 
 /* ==================== LOGO NAVBAR STYLING START ======================== */
 .BrandName h1 {
@@ -266,6 +315,50 @@ h3 {
 .AboutUS h1 {
 	font-size: 3.8rem;
 	margin-bottom: 2rem;
+	-webkit-animation: slide-in-blurred-top 1.5s cubic-bezier(0.23, 1, 0.32, 1)
+		1.5s both;
+	animation: slide-in-blurred-top 1.5s cubic-bezier(0.23, 1, 0.32, 1) 1.5s both;
+}
+
+@-webkit-keyframes slide-in-blurred-top {
+	0% {
+		-webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+		transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+		-webkit-transform-origin: 50% 0%;
+		transform-origin: 50% 0%;
+		-webkit-filter: blur(40px);
+		filter: blur(40px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateY(0) scaleY(1) scaleX(1);
+		transform: translateY(0) scaleY(1) scaleX(1);
+		-webkit-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+		-webkit-filter: blur(0);
+		filter: blur(0);
+		opacity: 1;
+	}
+}
+@keyframes slide-in-blurred-top {
+	0% {
+		-webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+		transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+		-webkit-transform-origin: 50% 0%;
+		transform-origin: 50% 0%;
+		-webkit-filter: blur(40px);
+		filter: blur(40px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateY(0) scaleY(1) scaleX(1);
+		transform: translateY(0) scaleY(1) scaleX(1);
+		-webkit-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+		-webkit-filter: blur(0);
+		filter: blur(0);
+		opacity: 1;
+	}
 }
 
 .AboutUS h3 {
@@ -392,11 +485,19 @@ h3 {
 /* ==================== SIDEBAR STYLING END ======================== */
 .crossISidebar {
 	float: right;
-	margin-right: 2rem;
-	margin-top: 1rem;
-	margin-bottom: 2rem;
+	margin-right: 2.8rem;
+	margin-top: 1.2rem;
+	margin-bottom: 1rem;
 	cursor: pointer;
-	color: white;
+	color: rgba(255, 255, 255, 0.9);
+	transition: 0.5 all;
+	padding: 12px;
+	border-radius: 50px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.crossISidebar:hover {
+	color: rgba(255, 255, 255, 0.8);
 }
 
 /* Material Ui Classes start */
@@ -735,7 +836,7 @@ h3 {
 
 .wrapper button span {
 	position: relative;
-	z-index: 2;
+	z-index: 1;
 }
 
 .wrapper button:after {
