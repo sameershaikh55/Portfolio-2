@@ -5,7 +5,7 @@ import video from "./video/video.mp4";
 const Home = () => {
 	return (
 		<>
-			<div className="HomeContainer">
+			<div id="About" className="HomeContainer">
 				<video autoPlay loop muted src={video} />
 			</div>
 			<div className="AboutUS">

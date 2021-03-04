@@ -10,14 +10,14 @@ const Navbar = () => {
 	// FOR NAVBAR SCROLLING EFFECT START
 	window.addEventListener("scroll", function () {
 		var header = document.querySelector(".NavbarContainer");
-		header.classList.toggle("sticky", window.scrollY > 600);
+		header.classList.toggle("sticky", window.scrollY > 100);
 	});
 
 	return (
 		<div className="container">
 			<div className="row">
 				<div className="NavbarContainer">
-					<div>
+					<div className="BrandName">
 						<h1>SAMEER SHAIKH</h1>
 						<Chip
 							className="UnderNameNChip"

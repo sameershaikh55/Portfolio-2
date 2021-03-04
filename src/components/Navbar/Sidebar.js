@@ -8,6 +8,9 @@ import ListItemText from "@material-ui/core/ListItemText";
 import MenuIcon from "@material-ui/icons/Menu";
 import CancelIcon from "@material-ui/icons/Cancel";
 
+// IMPORTING REACT SCROLL
+import { Link } from "react-scroll";
+
 const useStyles = makeStyles({
 	list: {
 		width: 320,
@@ -34,6 +37,10 @@ function Sidebar() {
 		setState({ ...state, [anchor]: open });
 	};
 
+	// SCROLLING VARIABLES
+	const ScrollDuration = 1200;
+	const ScrollDelay = 500;
+
 	const list = (anchor) => (
 		<div
 			className={clsx(classes.list)}
@@ -43,18 +50,60 @@ function Sidebar() {
 		>
 			<List>
 				<CancelIcon className="crossISidebar" style={{ fontSize: "4.2rem" }} />
-				<ListItem button>
-					<ListItemText>About</ListItemText>
-				</ListItem>
-				<ListItem button>
-					<ListItemText>My Projects</ListItemText>
-				</ListItem>
-				<ListItem button>
-					<ListItemText>Experience</ListItemText>
-				</ListItem>
-				<ListItem button>
-					<ListItemText>Contact</ListItemText>
-				</ListItem>
+				<Link
+					activeClass="activeNav"
+					to="About"
+					smooth={true}
+					duration={ScrollDuration}
+					delay={ScrollDelay}
+					spy={true}
+					onClick={toggleDrawer(anchor, false)}
+				>
+					<ListItem button>
+						<ListItemText>About</ListItemText>
+					</ListItem>
+				</Link>
+				<Link
+					activeClass="activeNav"
+					to="Experience"
+					smooth={true}
+					duration={ScrollDuration}
+					offset={-110}
+					delay={ScrollDelay}
+					spy={true}
+					onClick={toggleDrawer(anchor, false)}
+				>
+					<ListItem button>
+						<ListItemText>Experience</ListItemText>
+					</ListItem>
+				</Link>
+				<Link
+					activeClass="activeNav"
+					to="Projects"
+					smooth={true}
+					delay={ScrollDelay}
+					duration={ScrollDuration}
+					spy={true}
+					onClick={toggleDrawer(anchor, false)}
+				>
+					<ListItem button>
+						<ListItemText>My Projects</ListItemText>
+					</ListItem>
+				</Link>
+				<Link
+					activeClass="activeNav"
+					// to="Contact"
+					to="bottomFooter"
+					smooth={true}
+					delay={ScrollDelay}
+					duration={ScrollDuration}
+					spy={true}
+					onClick={toggleDrawer(anchor, false)}
+				>
+					<ListItem button>
+						<ListItemText>Contact</ListItemText>
+					</ListItem>
+				</Link>
 			</List>
 		</div>
 	);

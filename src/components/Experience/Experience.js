@@ -15,7 +15,7 @@ function Experience() {
 	let [html, css, js, bootstrap, reactjs, materialui] = percentage;
 
 	return (
-		<div className="ExpContainer">
+		<div id="Experience" className="ExpContainer bg-white">
 			<div className="container">
 				<div class="section-title">
 					<h2>

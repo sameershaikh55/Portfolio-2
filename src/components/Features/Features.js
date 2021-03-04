@@ -20,21 +20,18 @@ const Features = () => {
 					<SingleFeature
 						Title="Creative Design"
 						Icon={CgNotes}
-						Desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore."
+						Desc="I create striking visuals that appeal to visitors and make them fall in love with your brand. My designs are  unique and mobile optimised. My design process involves user research followed by wire framing and then production of designs."
 					/>
 					<SingleFeature
 						Title="Business Growth"
 						Icon={BsBarChartFill}
-						Desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore."
+						Desc="My mission is to transform our clients’ businesses, allowing them to utilise powerful technologies and grow their businesses, improve their processes that benefit businesses of all sizes, making them more efficient and effective."
 						Active="active"
 					/>
 					<SingleFeature
 						Title="Responsive Design"
 						Icon={FaMobileAlt}
-						Desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore."
+						Desc="Flat, Lightweight & Responsive Designs term is related to the idea of developing a website design in a way that helps the user to open a website on any size of screen the lay out to find changed according to the user’s PC screen motion."
 					/>
 				</div>
 			</div>
