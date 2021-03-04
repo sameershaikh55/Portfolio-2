@@ -26,7 +26,7 @@ function App() {
 	if (loading) {
 		document.body.style.overflow = "hidden";
 	} else {
-		document.body.style.overflow = "auto";
+		document.body.style.overflowY = "auto";
 	}
 
 	return (
