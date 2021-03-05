@@ -11,7 +11,7 @@ import Fade from "react-reveal/Fade";
 const Footer = () => {
 	return (
 		<>
-			<Fade delay={1000} duration={1000} bottom>
+			<Fade delay={100} duration={1000} bottom>
 				<div id="Contact" className="container-fluid FooterContainer">
 					<div className="row">
 						<div className="col-12">
@@ -57,7 +57,9 @@ const Footer = () => {
 									</div>
 									<div className="col-md-6 my-4 text-right text-white">
 										<h2>Whatsapp No:</h2>
-										<h1>+92-334-3882511</h1>
+										<a href="tel:923343882511">
+											<h1>+92-334-3882511</h1>
+										</a>
 									</div>
 								</div>
 							</div>
