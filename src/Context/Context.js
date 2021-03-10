@@ -7,6 +7,7 @@ import image6 from "./ProductImages/cloud-web.jpg";
 import image7 from "./ProductImages/resposive-web.jpg";
 import image8 from "./ProductImages/animated-web.jpg";
 import image9 from "./ProductImages/quiz-app.jpg";
+import image10 from "./ProductImages/animated-landing-page.png";
 
 export const states = {
 	projects: [
@@ -72,6 +73,13 @@ export const states = {
 			description:
 				"A Quiz website, Developed in reactjs and by using pure css, Styled-Components. Multiple Choice questions quiz you can customize type(easy, medium, hard) and length of the questions. different animation are been implemented",
 			url: "http://quiz-web-app-by-sameer-shaikh.surge.sh/",
+		},
+		{
+			title: "Animated Landing Page",
+			img: image10,
+			description:
+				"A Landing Page Website, Developed using HTML, CSS, JS, Bootstrap, Different animation are been implemented besides Scroll Animations",
+			url: "https://sameershaikh55.github.io/Animated-Landing-Page/",
 		},
 	],
 };
