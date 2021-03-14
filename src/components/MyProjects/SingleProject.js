@@ -17,7 +17,7 @@ const SingleProject = ({ Title, Image, Description, Url }) => {
 
 	return (
 		<>
-			<div className="col-lg-4 col-md-6 col-sm-6 mb-5">
+			<div className="col-lg-4 col-md-6 col-sm-6 mb-5 SingleProjectQ">
 				<Fade left>
 					<Tilt className="Tilt" options={{ max: 25, scale: 1.02 }}>
 						<div className="singlePContainer">

@@ -14,36 +14,36 @@ const SkillsDisplay = () => {
 		{
 			img: htmlImg,
 			alt: "html",
-			height: "15rem",
+			height: "11rem",
 		},
 		{
 			img: cssImg,
 			alt: "css",
-			height: "15rem",
+			height: "11rem",
 			// marginLeft: "45px",
 		},
 		{
 			img: jsImg,
 			alt: "js",
-			height: "13.8rem",
+			height: "10rem",
 			// marginLeft: "60px",
 		},
 		{
 			img: bootstrapImg,
 			alt: "bootstrap",
-			height: "17.2rem",
+			height: "13.2rem",
 			// marginLeft: "40px",
 		},
 		{
 			img: reactjsImg,
 			alt: "reactjs",
-			height: "10.2rem",
+			height: "8rem",
 			// marginLeft: "45px",
 		},
 		{
 			img: materialUIImg,
 			alt: "materialUI",
-			height: "17.2rem",
+			height: "13.2rem",
 			// marginLeft: "40px",
 		},
 	];
@@ -51,19 +51,62 @@ const SkillsDisplay = () => {
 	return (
 		<>
 			<div className="SkillsContainer bg-white">
-				<Slide bottom cascade>
-					{SkillsData.map((preImg, index) => {
-						return (
-							<span key={index}>
-								<img
-									src={preImg.img}
-									alt={preImg.alt}
-									style={{ height: preImg.height }}
-								/>
-							</span>
-						);
-					})}
-				</Slide>
+				<div className="SC-Slider">
+					{/* <Slide bottom cascade> */}
+					<div className="SC-Slide">
+						{SkillsData.map((preImg, index) => {
+							return (
+								<span key={index}>
+									<img
+										src={preImg.img}
+										alt={preImg.alt}
+										style={{ height: preImg.height }}
+									/>
+								</span>
+							);
+						})}
+					</div>
+					<div className="SC-Slide">
+						{SkillsData.map((preImg, index) => {
+							return (
+								<span key={index}>
+									<img
+										src={preImg.img}
+										alt={preImg.alt}
+										style={{ height: preImg.height }}
+									/>
+								</span>
+							);
+						})}
+					</div>
+					<div className="SC-Slide">
+						{SkillsData.map((preImg, index) => {
+							return (
+								<span key={index}>
+									<img
+										src={preImg.img}
+										alt={preImg.alt}
+										style={{ height: preImg.height }}
+									/>
+								</span>
+							);
+						})}
+					</div>
+					<div className="SC-Slide">
+						{SkillsData.map((preImg, index) => {
+							return (
+								<span key={index}>
+									<img
+										src={preImg.img}
+										alt={preImg.alt}
+										style={{ height: preImg.height }}
+									/>
+								</span>
+							);
+						})}
+					</div>
+					{/* </Slide> */}
+				</div>
 			</div>
 		</>
 	);
