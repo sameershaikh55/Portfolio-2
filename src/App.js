@@ -9,9 +9,7 @@ import Features from "./components/Features/Features";
 import Experience from "./components/Experience/Experience";
 import MyProjects from "./components/MyProjects/MyProjects";
 import Footer from "./components/Footer/Footer";
-
-// IMPORTING LOADING IMAGE
-import Loader from "./Loader/loader.gif";
+import Loader from "./components/Loader";
 
 function App() {
 	const [loading, setLoading] = useState(false);
@@ -20,7 +18,7 @@ function App() {
 		setLoading((prev) => !prev);
 		setTimeout(() => {
 			setLoading((prev) => !prev);
-		}, 2000);
+		}, 2500);
 	}, []);
 
 	if (loading) {
@@ -32,9 +30,7 @@ function App() {
 	return (
 		<>
 			{loading ? (
-				<div className="LoadeerContainer">
-					<img src={Loader} alt="" />
-				</div>
+				<Loader />
 			) : (
 				<div>
 					<Navbar />
