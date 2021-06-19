@@ -13,8 +13,8 @@ const Navbar = () => {
 	useEffect(() => {
 		// FOR NAVBAR SCROLLING EFFECT START
 		window.addEventListener("scroll", function () {
+			var header = document.querySelector(".NavbarContainer");
 			if (header !== null) {
-				var header = document.querySelector(".NavbarContainer");
 				header.classList.toggle("sticky", window.scrollY > 100);
 			}
 		});
