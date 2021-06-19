@@ -1,13 +1,13 @@
-import image1 from "./ProductImages/covid-tracker.jpg";
-import image2 from "./ProductImages/queen-running.jpg";
-import image3 from "./ProductImages/Todo.jpg";
-import image4 from "./ProductImages/expense-tracker.jpg";
-import image5 from "./ProductImages/online-store.jpg";
-import image6 from "./ProductImages/cloud-web.jpg";
-import image7 from "./ProductImages/resposive-web.jpg";
-import image8 from "./ProductImages/animated-web.jpg";
-import image9 from "./ProductImages/quiz-app.jpg";
-import image10 from "./ProductImages/animated-landing-page.png";
+import image1 from "../assets/ProductImages/covid-tracker.jpg";
+import image2 from "../assets/ProductImages/queen-running.jpg";
+import image3 from "../assets/ProductImages/Todo.jpg";
+import image4 from "../assets/ProductImages/expense-tracker.jpg";
+import image5 from "../assets/ProductImages/online-store.jpg";
+import image6 from "../assets/ProductImages/cloud-web.jpg";
+import image7 from "../assets/ProductImages/resposive-web.jpg";
+import image8 from "../assets/ProductImages/animated-web.jpg";
+import image9 from "../assets/ProductImages/quiz-app.jpg";
+import image10 from "../assets/ProductImages/animated-landing-page.png";
 
 export const states = {
 	projects: [

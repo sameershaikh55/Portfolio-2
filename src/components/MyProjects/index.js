@@ -1,6 +1,6 @@
 import React from "react";
 
-import { states } from "../../Context//Context";
+import { states } from "../../Context/Context";
 import SingleProject from "./SingleProject";
 
 const MyProjects = () => {

@@ -2,14 +2,15 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 // IMPORTING COMPONENTS
-import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/Home/Home";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 import SkillsDisplay from "./components/SkillsDisplay/SkillsDisplay";
-import Features from "./components/Features/Features";
-import Experience from "./components/Experience/Experience";
-import MyProjects from "./components/MyProjects/MyProjects";
-import Footer from "./components/Footer/Footer";
+import Features from "./components/Features";
+import Experience from "./components/Experience";
+import MyProjects from "./components/MyProjects";
+import Footer from "./components/Footer";
 import Loader from "./components/Loader";
+import ScrollBar from "./components/scrollBar";
 
 function App() {
 	const [loading, setLoading] = useState(false);
@@ -32,14 +33,15 @@ function App() {
 			{loading ? (
 				<Loader />
 			) : (
-				<div>
-					<Navbar />
-					<Home />
-					<SkillsDisplay />
-					<Features />
-					<Experience />
-					<MyProjects />
-					<Footer />
+					<div>
+						<ScrollBar />
+						<Navbar />
+						<Home />
+						<SkillsDisplay />
+						<Features />
+						<Experience />
+						<MyProjects />
+						<Footer />
 				</div>
 			)}
 		</>

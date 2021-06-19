@@ -7,47 +7,12 @@
 	font-family: "Poppins", sans-serif;
 }
 
-/* ======= SCROLLBAR STYLING START ======== */
-html {
-	scrollbar-face-color: var(--lighterTheme);
-	scrollbar-base-color: var(--lighterTheme);
-	scrollbar-3dlight-color: var(--lighterTheme);
-	scrollbar-highlight-color: var(--lighterTheme);
-	scrollbar-track-color: var(--darkTheme);
-	scrollbar-arrow-color: var(--darkTheme);
-	scrollbar-shadow-color: var(--lighterTheme);
-	scrollbar-dark-shadow-color: var(--lighterTheme);
-}
-
-::-webkit-scrollbar {
-	width: 8px;
-	height: 3px;
-}
-::-webkit-scrollbar-button {
-	background-color: var(--lighterTheme);
-}
-::-webkit-scrollbar-track {
-	background-color: var(--lighterTheme);
-}
-::-webkit-scrollbar-track-piece {
-	background-color: var(--darkTheme);
-}
-::-webkit-scrollbar-thumb {
-	height: 50px;
-	background-color: hsl(204, 100%, 25%);
-	border-radius: 3px;
-}
-::-webkit-scrollbar-corner {
-	background-color: var(--lighterTheme);
-}
-::-webkit-resizer {
-	background-color: #666;
-}
-
-/* ======= SCROLLBAR STYLING END ======== */
-
 /* colors */
 /* #100F10 #1B1B1B #242424, */
+
+::-webkit-scrollbar {
+  width: 0;
+}
 
 html {
 	font-size: 62.5%;
@@ -172,7 +137,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2.5rem 10rem;
+	padding: 2.5rem 2.5rem;
 	transition: 0.7s;
 	z-index: 2;
 	-webkit-animation: scale-in-ver-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
@@ -270,7 +235,7 @@ body {
 	box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.5);
 	position: fixed;
 	margin-top: 0rem;
-	padding: 1.5rem 10rem;
+	padding: 1.5rem 2.5rem;
 	background-color: var(--darkTheme);
 }
 
@@ -1265,5 +1230,22 @@ h3 {
 #button-6:hover a {
 	color: var(--black);
 }
-
 /* ==================== PRODUCT POP-UP SECTION END ======================== */
+
+/* ==================== CUSTOM SCROLLBAR START ======================== */
+.progress-container {
+  width: 7px;
+  height: 100vh;
+  background: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 12;
+}
+
+.progress-bar {
+  height: 0%;
+  background: var(--blueContrast);
+  width: 8px;
+}
+/* ==================== CUSTOM SCROLLBAR END ======================== */

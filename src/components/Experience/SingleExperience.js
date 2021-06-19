@@ -19,13 +19,14 @@ const SingleExperience = ({
 	return (
 		<div class="col-lg-3 col-md-4 col-sm-6">
 			<Flip left>
-				<Tilt className="Tilt" options={{ max: 25, scale: 1.03 }}>
 					<div
 						style={{
 							background: `linear-gradient(to right, ${GradientC_1}, ${GradientC_2})`,
 						}}
 						className="singleExperience text-center"
-					>
+				>
+				<Tilt className="Tilt" options={{ max: 25, scale: 1.03 }}>
+					
 						<div className="innerSingleExp">
 							<h1>
 								{Title}&nbsp;
@@ -42,8 +43,8 @@ const SingleExperience = ({
 								fill="#1c1c1c"
 							/>
 						</div>
-					</div>
 				</Tilt>
+					</div>
 			</Flip>
 		</div>
 	);

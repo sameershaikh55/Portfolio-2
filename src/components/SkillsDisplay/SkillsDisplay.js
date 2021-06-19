@@ -1,12 +1,12 @@
 import React from "react";
 
-import htmlImg from "./SkillsImages/html.png";
-import cssImg from "./SkillsImages/css.png";
-import jsImg from "./SkillsImages/js.png";
-import bootstrapImg from "./SkillsImages/bootstrap.png";
-import reactjsImg from "./SkillsImages/reactjs.png";
-import materialUIImg from "./SkillsImages/materialUI.png";
-
+import htmlImg from "../../assets/SkillsImages/html.png";
+import cssImg from "../../assets/SkillsImages/css.png";
+import jsImg from "../../assets/SkillsImages/js.png";
+import bootstrapImg from "../../assets/SkillsImages/bootstrap.png";
+import reactjsImg from "../../assets/SkillsImages/reactjs.png";
+import materialUIImg from "../../assets/SkillsImages/materialUI.png";
+import reduxImg from "../../assets/SkillsImages/redux.png";
 import Slide from "react-reveal/Slide";
 
 const SkillsDisplay = () => {
@@ -44,6 +44,12 @@ const SkillsDisplay = () => {
 			img: materialUIImg,
 			alt: "materialUI",
 			height: "13.2rem",
+			// marginLeft: "40px",
+		},
+		{
+			img: reduxImg,
+			alt: "redux",
+			height: "10rem",
 			// marginLeft: "40px",
 		},
 	];

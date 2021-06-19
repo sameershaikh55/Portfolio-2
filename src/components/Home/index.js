@@ -1,6 +1,7 @@
 import React from "react";
 
 import video from "./video/video.mp4";
+import { homeBg } from "../../assets/image";
 
 // IMPORTING REACT REVEAL
 import Fade from "react-reveal/Fade";
@@ -11,7 +12,7 @@ const Home = () => {
 		<>
 			<Fade>
 				<div id="About" className="HomeContainer">
-					<video autoPlay loop muted src={video} />
+					<video poster={homeBg} autoPlay loop muted src={video} />
 				</div>
 			</Fade>
 			<div className="AboutUS">

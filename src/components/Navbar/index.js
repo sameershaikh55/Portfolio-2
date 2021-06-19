@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // IMPORTED SIDEBAR
 import Sidebar from "./Sidebar";
@@ -10,11 +10,15 @@ import Chip from "@material-ui/core/Chip";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
-	// FOR NAVBAR SCROLLING EFFECT START
-	window.addEventListener("scroll", function () {
-		var header = document.querySelector(".NavbarContainer");
-		header.classList.toggle("sticky", window.scrollY > 100);
-	});
+	useEffect(() => {
+		// FOR NAVBAR SCROLLING EFFECT START
+		window.addEventListener("scroll", function () {
+			if (header !== null) {
+				var header = document.querySelector(".NavbarContainer");
+				header.classList.toggle("sticky", window.scrollY > 100);
+			}
+		});
+	}, []);
 
 	return (
 		<div className="container">

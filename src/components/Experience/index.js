@@ -1,11 +1,11 @@
 import React from "react";
 
-import htmlIMG from "../SkillsDisplay/SkillsImages/html.png";
-import cssIMG from "../SkillsDisplay/SkillsImages/css.png";
-import jsIMG from "../SkillsDisplay/SkillsImages/js.png";
-import bootstrapIMG from "../SkillsDisplay/SkillsImages/bootstrap2.png";
-import reactjsIMG from "../SkillsDisplay/SkillsImages/reactjs.png";
-import materialUI from "../SkillsDisplay/SkillsImages/materialUI.png";
+import htmlIMG from "../../assets/SkillsImages/html.png";
+import cssIMG from "../../assets/SkillsImages/css.png";
+import jsIMG from "../../assets/SkillsImages/js.png";
+import bootstrapIMG from "../../assets/SkillsImages/bootstrap2.png";
+import reactjsIMG from "../../assets/SkillsImages/reactjs.png";
+import materialUI from "../../assets/SkillsImages/materialUI.png";
 
 // IMPORTING SINGLE-EXP COMPONENT
 import SingleExperience from "./SingleExperience";
