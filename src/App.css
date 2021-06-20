@@ -916,6 +916,9 @@ h3 {
 	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
 	font-weight: 600;
 	border-bottom: 0.1px solid white;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 @media screen and (max-width: 450px) {
@@ -1248,4 +1251,13 @@ h3 {
   background: var(--blueContrast);
   width: 8px;
 }
+
+@media screen and (max-width: 768px) {
+	.progress-container {
+		width: 0px;
+	}
+	.progress-bar {
+		width: 0px;
+	}
+} 
 /* ==================== CUSTOM SCROLLBAR END ======================== */
