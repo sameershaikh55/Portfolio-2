@@ -37,7 +37,7 @@ export const states = {
 			img: image15,
 			description:
 				"An E-Commerce Website, Developed in reactjs and by using css (Responsive websites) and Bootstrap(library). It includes more than 17 pages with some modals and both desktop and mobile site has different designs.",
-			url: "https://endalgo.com/",
+			url: "https://inspiring-shirley-677a5c.netlify.app/",
 		},
 		{
 			title: "LozpData",
@@ -58,7 +58,7 @@ export const states = {
 			img: image16,
 			description:
 				"This is a small functional website where you can add an Amazon product link then it will bring you the amazon product image and make it a link tag where you can click to land on the same product page on the Amazon website",
-			url: "http://chhatt.com/",
+			url: "http://frightening-rate.surge.sh/",
 		},
 		{
 			title: "Portfolio website",
