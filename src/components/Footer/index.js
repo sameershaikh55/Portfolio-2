@@ -49,9 +49,9 @@ const Footer = () => {
 										<h2>
 											<a
 												className="FooterGmailLink"
-												href="mailto:sameermubeen@gmail.com"
+												href="mailto:sameermubeen4@gmail.com"
 											>
-												sameermubeen4@gamil.com
+												sameermubeen4@gmail.com
 											</a>
 										</h2>
 									</div>
