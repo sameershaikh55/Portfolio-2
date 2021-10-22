@@ -25,10 +25,10 @@ const Home = () => {
 					</Fade>
 					<Fade duration={2000} delay={2400} right cascade>
 						<h3>
-							Hey! Are you looking For a Web developer or React developer? I
-							have two years of experience and working to make your development
-							faster, easier and efficient. Available 24/7 get in touch to
-							discuss details.
+							Hey! Are you looking For a Web developer, React developer or{" "}
+							firebase developer? I have 2.5 years of experience and working to
+							make your development faster, easier and efficient. Available 24/7
+							get in touch to discuss details.
 						</h3>
 					</Fade>
 					{/* <!--===================== BLOB BUTTON START  =====================--> */}

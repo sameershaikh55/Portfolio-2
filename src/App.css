@@ -11,7 +11,7 @@
 /* #100F10 #1B1B1B #242424, */
 
 ::-webkit-scrollbar {
-  width: 0;
+	width: 0;
 }
 
 html {
@@ -1188,6 +1188,48 @@ h3 {
 
 /* MATERIAL UI INBUILD CLASSES  END */
 
+/* SHARE BTN START */
+.floating-chat-btn {
+	position: fixed;
+	bottom: 25px;
+	right: 20px;
+	color: #fff;
+	background-color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	z-index: 999;
+	overflow: hidden;
+	padding: 0.6rem;
+}
+
+.whatstbtn {
+	background-color: #25d366;
+	animation: floating1 1s linear infinite alternate;
+	width: 45px;
+	height: 45px;
+}
+
+@keyframes floating1 {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+	50% {
+		transform: scale(1.07);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1.1);
+	}
+}
+/* SHARE BTN END */
+
 /* Sixth Button */
 #button-6 {
 	margin-top: 2.5rem;
@@ -1237,19 +1279,19 @@ h3 {
 
 /* ==================== CUSTOM SCROLLBAR START ======================== */
 .progress-container {
-  width: 7px;
-  height: 100vh;
-  background: #000;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 12;
+	width: 7px;
+	height: 100vh;
+	background: #000;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 12;
 }
 
 .progress-bar {
-  height: 0%;
-  background: var(--blueContrast);
-  width: 8px;
+	height: 0%;
+	background: var(--blueContrast);
+	width: 8px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1259,5 +1301,12 @@ h3 {
 	.progress-bar {
 		width: 0px;
 	}
-} 
+	.floating-chat-btn {
+		width: 35px;
+		height: 35px;
+	}
+	.whatstbtn {
+		font-size: 25px;
+	}
+}
 /* ==================== CUSTOM SCROLLBAR END ======================== */

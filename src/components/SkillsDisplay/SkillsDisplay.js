@@ -7,6 +7,7 @@ import bootstrapImg from "../../assets/SkillsImages/bootstrap.png";
 import reactjsImg from "../../assets/SkillsImages/reactjs.png";
 import materialUIImg from "../../assets/SkillsImages/materialUI.png";
 import reduxImg from "../../assets/SkillsImages/redux.png";
+import firebase from "../../assets/SkillsImages/firebase.png";
 import Slide from "react-reveal/Slide";
 
 const SkillsDisplay = () => {
@@ -51,6 +52,11 @@ const SkillsDisplay = () => {
 			alt: "redux",
 			height: "10rem",
 			// marginLeft: "40px",
+		},
+		{
+			img: firebase,
+			alt: "Firebase",
+			height: "6rem",
 		},
 	];
 

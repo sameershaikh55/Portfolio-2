@@ -6,12 +6,13 @@ import jsIMG from "../../assets/SkillsImages/js.png";
 import bootstrapIMG from "../../assets/SkillsImages/bootstrap2.png";
 import reactjsIMG from "../../assets/SkillsImages/reactjs.png";
 import materialUI from "../../assets/SkillsImages/materialUI.png";
+import firebase2 from "../../assets/SkillsImages/firebase2.png";
 
 // IMPORTING SINGLE-EXP COMPONENT
 import SingleExperience from "./SingleExperience";
 
 function Experience() {
-	let percentage = [90, 85, 50, 90, 50, 75];
+	let percentage = [90, 90, 80, 95, 90, 85];
 	let [html, css, js, bootstrap, reactjs, materialui] = percentage;
 
 	return (
@@ -69,6 +70,14 @@ function Experience() {
 						Percentage={materialui}
 						GradientC_1="#005387"
 						GradientC_2="#addfff"
+						TextColor="#84bee3"
+					/>
+					<SingleExperience
+						Title="Firebase"
+						Img={firebase2}
+						Percentage={materialui}
+						GradientC_1="#FFCA28"
+						GradientC_2="#F88E0C"
 						TextColor="#84bee3"
 					/>
 				</div>
