@@ -23,9 +23,11 @@ const Testimonials = () => {
 		<div className="testimonials_container">
 			<div className="section-title">
 				<span>Clients</span>
-				<h2 style={{ fontSize: "6rem" }}>
-					<b>Feedback</b>
-				</h2>
+				<Fade duration={1000}>
+					<h2 style={{ fontSize: "6rem" }}>
+						<b>Feedback</b>
+					</h2>
+				</Fade>
 				<p>
 					My reviews below are based on my some clients' experiences on
 					different platforms and profiles
