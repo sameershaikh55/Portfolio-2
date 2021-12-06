@@ -19,6 +19,55 @@ import image23 from "../assets/ProductImages/dashboard.png";
 import image24 from "../assets/ProductImages/show.png";
 import image25 from "../assets/ProductImages/tripp.PNG";
 
+// TESTIMONALS IMAGES
+import r1 from "../assets/testimonials/r1.PNG";
+import r2 from "../assets/testimonials/r2.PNG";
+import r3 from "../assets/testimonials/r3.PNG";
+import r4 from "../assets/testimonials/r4.PNG";
+import r5 from "../assets/testimonials/r5.PNG";
+import r6 from "../assets/testimonials/r6.PNG";
+import r7 from "../assets/testimonials/r7.PNG";
+import r8 from "../assets/testimonials/r8.PNG";
+import r9 from "../assets/testimonials/r9.PNG";
+import r10 from "../assets/testimonials/r10.PNG";
+import r11 from "../assets/testimonials/r11.PNG";
+import r12 from "../assets/testimonials/r12.PNG";
+import r13 from "../assets/testimonials/r13.PNG";
+import r14 from "../assets/testimonials/r14.PNG";
+import r15 from "../assets/testimonials/r15.PNG";
+import r16 from "../assets/testimonials/r16.PNG";
+import r17 from "../assets/testimonials/r17.PNG";
+import r18 from "../assets/testimonials/r18.PNG";
+import r19 from "../assets/testimonials/r19.PNG";
+import r20 from "../assets/testimonials/r20.PNG";
+import r21 from "../assets/testimonials/r21.PNG";
+import r22 from "../assets/testimonials/r22.PNG";
+import r23 from "../assets/testimonials/r23.PNG";
+import r24 from "../assets/testimonials/r24.PNG";
+import r25 from "../assets/testimonials/r25.PNG";
+import r26 from "../assets/testimonials/r26.PNG";
+import r27 from "../assets/testimonials/r27.PNG";
+import r28 from "../assets/testimonials/r28.PNG";
+import r29 from "../assets/testimonials/r29.PNG";
+import r30 from "../assets/testimonials/r30.PNG";
+import r31 from "../assets/testimonials/r31.PNG";
+import r32 from "../assets/testimonials/r32.PNG";
+import r33 from "../assets/testimonials/r33.PNG";
+import r34 from "../assets/testimonials/r34.PNG";
+import r35 from "../assets/testimonials/r35.PNG";
+import r36 from "../assets/testimonials/r36.PNG";
+import r37 from "../assets/testimonials/r37.PNG";
+import r38 from "../assets/testimonials/r38.PNG";
+import r39 from "../assets/testimonials/r39.PNG";
+import r40 from "../assets/testimonials/r40.PNG";
+import r41 from "../assets/testimonials/r41.PNG";
+import r42 from "../assets/testimonials/r42.PNG";
+import r43 from "../assets/testimonials/r43.PNG";
+import r44 from "../assets/testimonials/r44.PNG";
+import r45 from "../assets/testimonials/r45.PNG";
+import r46 from "../assets/testimonials/r46.PNG";
+import r47 from "../assets/testimonials/r47.PNG";
+
 export const states = {
 	projects: [
 		{
@@ -163,3 +212,53 @@ export const states = {
 		},
 	],
 };
+
+export const testimonials = [
+	r34,
+	r36,
+	r47,
+	r37,
+	r38,
+	r40,
+	r44,
+	r45,
+	r46,
+	r29,
+	r28,
+	r1,
+	r4,
+	r24,
+	r23,
+	r5,
+	r8,
+	r10,
+	r11,
+	r16,
+	r19,
+	r20,
+	r22,
+	r25,
+	r26,
+	r27,
+	r30,
+	r31,
+	r32,
+	r33,
+	r35,
+	r39,
+	r41,
+	r42,
+	r43,
+	r2,
+	r3,
+	r6,
+	r7,
+	r9,
+	r12,
+	r13,
+	r14,
+	r15,
+	r17,
+	r18,
+	r21,
+];

@@ -11,6 +11,7 @@ import MyProjects from "./components/MyProjects";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
 import ScrollBar from "./components/scrollBar";
+import Testimonials from "./components/testimonials";
 
 function App() {
 	const [loading, setLoading] = useState(false);
@@ -55,6 +56,7 @@ function App() {
 					<ScrollBar />
 					<Navbar />
 					<Home />
+					<Testimonials />
 					<SkillsDisplay />
 					<Features />
 					<Experience />

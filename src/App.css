@@ -1277,6 +1277,69 @@ h3 {
 }
 /* ==================== PRODUCT POP-UP SECTION END ======================== */
 
+/* ==================== TESTIMONIALS START ======================== */
+.testimonials_container {
+	margin: 4rem 0rem;
+}
+
+.testimonials_container .testi_indi {
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
+	height: 300px;
+	width: 100%;
+	border-radius: 20px;
+}
+
+.testimonials_container .testi_indi img {
+	max-width: 700px;
+	object-fit: contain;
+}
+
+.testimonials_container .section-title {
+	text-align: center;
+	margin-bottom: 0rem;
+	margin-top: -5px;
+	position: relative;
+	z-index: 1;
+}
+
+.testimonials_container .section-title span {
+	text-transform: uppercase;
+	display: block;
+	letter-spacing: 0.1rem;
+	font-size: 1.4rem;
+	font-weight: 600;
+	margin-bottom: 0rem;
+	color: var(--darkTheme);
+}
+
+.testimonials_container .section-title h2 {
+	margin: 0px;
+	font-size: 4rem;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.testimonials_container .section-title h2 span {
+	background-image: linear-gradient(rgba(0, 0, 0, 0) 80%, var(--blueContrast));
+	background-position: initial;
+	background-repeat: initial;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: initial;
+	font-weight: 600 !important;
+	background-size: 90px 1.1em !important;
+}
+
+.testimonials_container .section-title p {
+	font-size: 1.5rem;
+	max-width: 900px;
+	margin: 0.8rem auto 0rem;
+}
+/* ==================== TESTIMONIALS END ======================== */
+
 /* ==================== CUSTOM SCROLLBAR START ======================== */
 .progress-container {
 	width: 7px;
