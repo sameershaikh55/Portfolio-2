@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import ReactGA from "react-ga";
 
 // IMPORTING COMPONENTS
 import Navbar from "./components/Navbar";
@@ -16,7 +17,13 @@ import Testimonials from "./components/testimonials";
 function App() {
 	const [loading, setLoading] = useState(false);
 
+	// LOADER
 	useEffect(() => {
+		// GOOGLE ANALYTICS START
+		ReactGA.initialize("G-JLN6FQLK7M");
+		ReactGA.pageview(window.location.pathname + window.location.search);
+		// GOOGLE ANALYTICS END
+
 		setLoading((prev) => !prev);
 		setTimeout(() => {
 			setLoading((prev) => !prev);
