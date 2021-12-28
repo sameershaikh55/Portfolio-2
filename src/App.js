@@ -20,7 +20,7 @@ function App() {
 	// LOADER
 	useEffect(() => {
 		// GOOGLE ANALYTICS START
-		ReactGA.initialize("G-JLN6FQLK7M");
+		ReactGA.initialize("UA-214921904-1");
 		ReactGA.pageview(window.location.pathname + window.location.search);
 		// GOOGLE ANALYTICS END
 
