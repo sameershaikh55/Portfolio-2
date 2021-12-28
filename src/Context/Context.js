@@ -152,7 +152,7 @@ export const states = {
 			img: image25,
 			description:
 				"This is a NFT website developed in react js with 6 to 8 sections modern design styled in CSS and bootstrap",
-			url: "https://www.trippysnft.com/",
+			url: "https://trippynft.surge.sh/",
 		},
 		{
 			title: "Chhatt.com",
