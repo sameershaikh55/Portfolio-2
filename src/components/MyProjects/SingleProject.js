@@ -8,12 +8,23 @@ import AlertDialogSlide from "./ProjectModal";
 
 import Fade from "react-reveal/Fade";
 
-const SingleProject = ({ Title, Image, Description, Url }) => {
+const SingleProject = ({ detail }) => {
 	const [open, setOpen] = useState(false);
 
 	const handleClickOpen = () => {
 		setOpen(true);
 	};
+
+	const {
+		description,
+		link,
+		name,
+		picture: {
+			fields: {
+				file: { url },
+			},
+		},
+	} = detail.fields;
 
 	return (
 		<>
@@ -21,9 +32,9 @@ const SingleProject = ({ Title, Image, Description, Url }) => {
 				<Fade left>
 					<Tilt className="Tilt" options={{ max: 25, scale: 1.02 }}>
 						<div className="singlePContainer">
-							<img src={Image} alt="" />
+							<img src={url} alt={name} />
 							<div className="singlePContainerBody">
-								<h1> {Title} </h1>
+								<h1> {name} </h1>
 								<div class="wrapper">
 									<button onClick={handleClickOpen}>
 										<span>View More</span>
@@ -33,12 +44,12 @@ const SingleProject = ({ Title, Image, Description, Url }) => {
 						</div>
 					</Tilt>
 					<AlertDialogSlide
-						PopUpImage={Image}
-						PopUpTitle={Title}
-						PopUpDesc={Description}
+						PopUpImage={url}
+						PopUpTitle={name}
+						PopUpDesc={description}
 						OpenBtn={open}
 						SetOpenBtn={setOpen}
-						Url={Url}
+						Url={link}
 					/>
 				</Fade>
 			</div>

@@ -1,9 +1,20 @@
 import React from "react";
 
-import { states } from "../../Context/Context";
+import { useEffect } from "react";
+import { useState } from "react";
+
+// import { states } from "../../Context/Context";
+import { gettingData } from "../../service";
+
 import SingleProject from "./SingleProject";
 
 const MyProjects = () => {
+	const [projects, setProjects] = useState([]);
+
+	useEffect(() => {
+		gettingData().then((res) => setProjects(res));
+	}, []);
+
 	return (
 		<>
 			<div id="Projects" className="myProjectsContainer">
@@ -14,17 +25,8 @@ const MyProjects = () => {
 						</h2>
 					</div>
 					<div className="row sibling-fade">
-						{states.projects.map((prev) => {
-							const { title, img, description, url } = prev;
-							return (
-								<SingleProject
-									key={title}
-									Title={title}
-									Image={img}
-									Description={description}
-									Url={url}
-								/>
-							);
+						{projects.map((prev) => {
+							return <SingleProject detail={prev} />;
 						})}
 					</div>
 				</div>
